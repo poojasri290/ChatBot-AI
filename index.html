@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EduBot - Smart Campus Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <div>
+
+            <h2>🤖 EduBot</h2>
+
+            <p>Smart Campus Assistant</p>
+
+            <h4 id="welcomeUser"></h4>
+
+        </div>
+
+        <button id="themeBtn">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </header>
+
+    <!-- Chat Area -->
+
+    <div id="chatBox">
+
+        <div class="bot">
+
+            👋 Welcome to EduBot.
+
+            <br><br>
+
+            I can help you with
+
+            <ul>
+
+                <li>Attendance</li>
+
+                <li>CGPA</li>
+
+                <li>Placement</li>
+
+                <li>Interview</li>
+
+                <li>Subjects</li>
+
+                <li>Library</li>
+
+                <li>Bus Timing</li>
+
+                <li>College Timing</li>
+
+            </ul>
+
+            <br>
+
+            Try clicking the quick buttons below 👇
+
+        </div>
+
+    </div>
+
+    <!-- Quick Buttons -->
+
+    <div class="quickButtons">
+
+        <button onclick="quickReply('attendance')">
+
+            📊 Attendance
+
+        </button>
+
+        <button onclick="quickReply('cgpa')">
+
+            🎓 CGPA
+
+        </button>
+
+        <button onclick="quickReply('placement')">
+
+            💼 Placement
+
+        </button>
+
+        <button onclick="quickReply('subjects')">
+
+            📚 Subjects
+
+        </button>
+
+        <button onclick="quickReply('interview')">
+
+            ❓ Interview
+
+        </button>
+
+        <button onclick="quickReply('library')">
+
+            📖 Library
+
+        </button>
+
+    </div>
+
+    <!-- Input -->
+
+    <div class="inputArea">
+
+        <input
+
+            type="text"
+
+            id="userInput"
+
+            placeholder="Type your question...">
+
+        <button onclick="sendMessage()">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+        <button onclick="startVoice()">
+
+            <i class="fa-solid fa-microphone"></i>
+
+        </button>
+        <button onclick="clearChat()">
+🗑 
+</button>
+
+
+<button onclick="logout()">
+🚪 
+</button>
+
+</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
